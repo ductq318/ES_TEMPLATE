@@ -1,0 +1,98 @@
+﻿@{
+    Layout = null;
+    string urlStatic = "https://static.easternsun.vn";
+}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>HỆ THỐNG QUẢN TRỊ DOANH NGHIỆP</title>
+<link rel="shortcut icon" href="@urlStatic/img/favicon.ico">
+<link rel="stylesheet" href="@urlStatic/vendor/sumo-select/sumoselect.min.css">
+<link rel="stylesheet" href="@urlStatic/vendor/datatables/datatables.min.css"> <!-- styles cho bảng  -->
+<link rel="stylesheet" href="@urlStatic/fonts/open-sans/style.min.css"> <!-- font  styles dùng chung  -->
+<link rel="stylesheet" href="@urlStatic/fonts/universe-admin/style.css"> <!-- icon font styles dùng chung -->
+<link rel="stylesheet" href="@urlStatic/fonts/mdi/css/materialdesignicons.min.css"> <!-- Các icon meterialdesignicons -->
+<link rel="stylesheet" href="@urlStatic/fonts/iconfont/style.css"> <!-- DEPRECATED iconmonstr -->
+<link rel="stylesheet" href="@urlStatic/vendor/flatpickr/flatpickr.min.css"> <!-- Các style gốc flatpickr plugin (datepicker) -->
+<link rel="stylesheet" href="@urlStatic/vendor/simplebar/simplebar.css"> <!-- các style gốc cho simplebar plugin (scrollbar)  -->
+<link rel="stylesheet" href="@urlStatic/vendor/tagify/tagify.css"> <!-- styles dành cho các tags -->
+<link rel="stylesheet" href="@urlStatic/vendor/tippyjs/tippy.css"> <!-- original tippy plugin (tooltip) styles -->
+<link rel="stylesheet" href="@urlStatic/vendor/bootstrap/css/bootstrap.min.css"> <!-- Các style gốc của bootstrap dùng chung -->
+<link rel="stylesheet" href="@urlStatic/css/style.min.css" id="stylesheet"> <!-- các style dùng chung -->
+<link rel="stylesheet" href="@urlStatic/plugins/bootstrap-timepicker/css/bootstrap-timepicker.css" />
+<link href="@urlStatic/plugins/angular-confirm-master/js/angular-confirm.min.css" rel="stylesheet" />
+<link href="@urlStatic/css/Custom.css" rel="stylesheet" />
+<script>
+    var cusTomSelect;
+</script>
+<link rel="stylesheet" href="@urlStatic/css/style-custom.css"><!-- styles tùy chỉnh  -->
+<link rel="stylesheet" href="@urlStatic/plugins/ui-select/select.css">
+<link rel="stylesheet" href="@urlStatic/plugins/jquery-contextmenu/jquery.contextMenu.min.css">
+<link href="@urlStatic/plugins/angularjs-datetime/angularjs-datetime-picker.css" rel="stylesheet" type="text/css" />
+<link href="@urlStatic/plugins/treegrid/treeGrid.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="@urlStatic/vendor/fixedColumns.dataTables.min.css">
+<link href="@urlStatic/plugins/angular-confirm-v1/angular-confirm.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="@urlStatic/vendor/fullcalendar/fullcalendar.min.css">
+<link rel="stylesheet" href="@urlStatic/vendor/jexcel/css/jquery.jcalendar.css">
+<link href="@urlStatic/vendor/jexcel/css/jquery.jexcel.css" rel="stylesheet" />
+<link href="@urlStatic/plugins/jstree/themes/default/style.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="@urlStatic/js/ie.assign.fix.min.js"></script>
+<script src="@urlStatic/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/js.cookie.min.js" type="text/javascript"></script>
+<link href="@urlStatic/plugins/jquery-nestable/jquery.nestable.css" rel="stylesheet" />
+<script src="@urlStatic/js/ie.assign.fix.min.js"></script>
+<script src="@urlStatic/plugins/angularjs/angular.min.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/angularjs/angular-locale_vi-vn.js"></script>
+<script src="@urlStatic/plugins/angularjs/angular-sanitize.min.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/angularjs/angular-touch.min.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/angularjs/angular-route.js"></script>
+<script src="@urlStatic/plugins/angularjs/angular-cookies.min.js"></script>
+<script src="@urlStatic/plugins/angularjs/plugins/angular-ui-router.min.js"></script>
+<script src="@urlStatic/vendor/ui-bootstrap-tpls-2.5.0.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/underscore.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/jquery-validation/jquery.validate.min.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/jquery-validation/angular-validate.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/dataTables.select.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/dataTables.scroller.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/dataTables.responsive.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/dataTables.colVis.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/dataTables.columnFilter.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/dataTables.colReorder.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.js"></script>
+<script src="@urlStatic/plugins/angularjs-datatable/js/dataTables.fixedColumns.min.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.instances.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.factory.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.directive.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.options.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.renderer.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.util.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.bootstrap.min.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.select.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.scroller.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.colvis.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.columnfilter.js"></script>
+<script type="text/javascript" src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.colreorder.js"></script>
+<script src="@urlStatic/plugins/angularjs-datatable/js/angular-datatables.fixedcolumns.min.js"></script>
+<script src="@urlStatic/plugins/angular-confirm-master/js/angular-confirm.min.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/angular-confirm-v1/angular-confirm.js"></script>
+<script src="@urlStatic/plugins/angularjs/plugins/angular-file-upload/angular-file-upload.min.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/bootstrap-contextmenu/contextMenu.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/ui-select/select.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/angularjs-datetime/angularjs-datetime-picker.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/moment/moment.min.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/moment/angular-moment.min.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/jstree/jstree.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/jstree/ngJsTree.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/treegrid/tree-grid-directive.js" type="text/javascript"></script>
+<script src="@urlStatic/plugins/tinymce/tinymce.min.js"></script>
+<script src="@urlStatic/plugins/tinymce/ui.tinymce.min.js"></script>
+<script src="@urlStatic/vendor/frappe-charts/frappe-charts.min.iife.js"></script>
+<script src="https://kit.fontawesome.com/f5e18029e7.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-3d@1.1.0"></script>
